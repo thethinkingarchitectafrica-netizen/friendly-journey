@@ -1,6 +1,7 @@
 import Script from "next/script";
 import AnimatedContent from "./AnimatedContent";
 import Grainient from "./Grainient";
+import TallyAutoOpen from "./TallyAutoOpen";
 
 const benefits = [
   {
@@ -198,6 +199,7 @@ export default function Home() {
         </div>
       </footer>
       <Script src="https://tally.so/widgets/embed.js" strategy="afterInteractive" />
+      <TallyAutoOpen />
     </>
   );
 }
