@@ -73,18 +73,6 @@ export default function Home() {
               <p className="hero-support">Built around one idea: nobody should have to figure this profession out alone.</p>
               <a className="button" href="#join">Join the community <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="hero-art" aria-hidden="true">
-              <div className="art-topline"><span>FIELD NOTES · 01</span><span>06° 31′ N</span></div>
-              <svg className="plan-drawing" viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M48 42H372V338H48z" />
-                <path d="M48 42h130v116H48zM178 42h102v72H178zM280 42h92v116h-92zM48 158h130v92H48zM178 114h102v136H178zM280 158h92v92h-92zM48 250h82v88H48zM130 250h150v88H130zM280 250h92v88h-92z" />
-                <path d="M178 158v-24m0 24h24m78-44h-22m22 44v-22M130 250v-22m150 22h-22M48 205h18m-18 90h28" />
-                <circle cx="229" cy="182" r="5" />
-                <path d="M229 168v-22m0 72v-22m14-14h22m-72 0h22" />
-                <path className="plan-dash" d="M24 190h372M210 18v344" />
-              </svg>
-              <div className="art-caption"><span className="caption-dot" /> A clearer path through practice</div>
-            </div>
           </div>
         </section>
 

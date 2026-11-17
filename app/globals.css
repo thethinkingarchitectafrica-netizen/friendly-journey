@@ -27,21 +27,13 @@ main { overflow: hidden; }
 
 .hero { position: relative; isolation: isolate; width: 100%; min-height: min(760px, 92svh); padding: 150px 0 96px; display: flex; align-items: center; overflow: hidden; color: #fff; }
 .hero::after { position: absolute; z-index: -1; inset: 0; content: ""; background: linear-gradient(90deg, rgb(14 12 17 / 48%), rgb(14 12 17 / 10%) 75%), linear-gradient(180deg, rgb(14 12 17 / 35%), transparent 40%, rgb(14 12 17 / 32%)); }
-.hero-layout { display: grid; grid-template-columns: 1.04fr .96fr; gap: clamp(32px, 6vw, 86px); align-items: center; }
-.hero-content { position: relative; z-index: 1; }
+.hero-layout { display: grid; grid-template-columns: 1fr; align-items: center; }
+.hero-content { position: relative; z-index: 1; max-width: 860px; margin-inline: auto; text-align: center; }
 .hero-kicker { display: inline-flex; padding: 8px 13px; border: 1px solid rgb(255 255 255 / 26%); border-radius: 999px; background: rgb(255 255 255 / 10%); color: #fff0e4; font-size: .72rem; text-transform: uppercase; letter-spacing: .11em; backdrop-filter: blur(12px); }
-.hero h1 { max-width: 640px; margin: 26px 0 22px; font-size: clamp(3.4rem, 7vw, 6.5rem); line-height: .95; letter-spacing: -.08em; font-weight: 600; }
-.hero p { max-width: 480px; margin: 0 0 12px; color: rgb(255 255 255 / 84%); font-size: clamp(1rem, 2vw, 1.15rem); }
+.hero h1 { max-width: 860px; margin: 26px auto 22px; font-size: clamp(3.4rem, 7vw, 6.5rem); line-height: .95; letter-spacing: -.08em; font-weight: 600; }
+.hero p { max-width: 540px; margin: 0 auto 12px; color: rgb(255 255 255 / 84%); font-size: clamp(1rem, 2vw, 1.15rem); }
 .hero .hero-support { margin-bottom: 30px; font-size: .93rem; color: rgb(255 255 255 / 68%); }
 .hero .button { gap: 20px; }
-.hero-art { min-height: 400px; padding: 22px 24px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid rgb(255 255 255 / 34%); border-radius: 25px; background: linear-gradient(135deg, rgb(255 255 255 / 18%), rgb(255 255 255 / 6%)); box-shadow: 0 24px 80px rgb(10 8 15 / 20%), inset 0 1px 0 rgb(255 255 255 / 40%); backdrop-filter: blur(20px) saturate(125%); -webkit-backdrop-filter: blur(20px) saturate(125%); }
-.art-topline, .art-caption { display: flex; align-items: center; justify-content: space-between; color: rgb(255 255 255 / 62%); font-size: .62rem; letter-spacing: .12em; }
-.plan-drawing { width: 100%; max-height: 285px; stroke: rgb(255 255 255 / 75%); stroke-width: 1.15; }
-.plan-drawing path:nth-child(2) { stroke: rgb(255 255 255 / 43%); }
-.plan-drawing circle { fill: #ffb47d; stroke: #ffb47d; }
-.plan-drawing .plan-dash { stroke: rgb(255 255 255 / 28%); stroke-dasharray: 3 7; }
-.art-caption { justify-content: flex-start; gap: 10px; color: white; font-size: .77rem; letter-spacing: .01em; }
-.caption-dot { width: 7px; height: 7px; border-radius: 50%; background: #ff9b56; box-shadow: 0 0 14px #ff9b56; }
 .grainient { position: absolute; z-index: -2; inset: -12%; overflow: hidden; background: linear-gradient(var(--grainient-angle), var(--grainient-colors)); background-size: 170% 170%; animation: grainient-flow var(--grainient-flow-duration) ease-in-out infinite alternate; }
 .grainient::before { position: absolute; content: ""; inset: -25%; opacity: calc(var(--grainient-silk) * .75); background: radial-gradient(ellipse at 18% 25%, #f97316 0, transparent 42%), radial-gradient(ellipse at 82% 70%, #9a3412 0, transparent 45%); filter: blur(42px); animation: grainient-silk calc(var(--grainient-flow-duration) * .72) ease-in-out infinite alternate; }
 .grainient::after { position: absolute; content: ""; inset: 0; opacity: var(--grainient-grain); background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E"); mix-blend-mode: soft-light; }
@@ -119,7 +111,6 @@ footer { padding: 36px 0 44px; border-top: 1px solid var(--rule); }
   .join-section { width: calc(100% - 24px); padding: 32px 20px; border-radius: 23px; }
 .overview-grid { grid-template-columns: 1fr; gap: 32px; }
 .hero-layout { grid-template-columns: 1fr; }
-.hero-art { display: none; }
 .join-section .shell { grid-template-columns: 1fr; gap: 24px; }
 .join-aside { min-height: 165px; }
 .aside-note { font-size: .6rem; }
