@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f5f0"/>
+  <path d="M80 84h1040v462H80z" fill="none" stroke="#dedbd2" stroke-width="2"/>
+  <text x="120" y="180" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="5" fill="#a6533b">TTA · COMMUNITY</text>
+  <text x="120" y="310" font-family="Georgia,serif" font-size="84" fill="#24231f">The Thinking</text>
+  <text x="120" y="410" font-family="Georgia,serif" font-size="84" fill="#24231f">Architect</text>
+  <text x="124" y="486" font-family="Arial,sans-serif" font-size="28" fill="#69665e">A community for people in architecture at every stage.</text>
+</svg>
