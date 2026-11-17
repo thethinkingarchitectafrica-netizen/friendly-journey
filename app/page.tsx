@@ -65,14 +65,26 @@ export default function Home() {
             silk={0.35}
             grainAmount={0.08}
           />
-          <div className="narrow hero-content">
-            <span className="eyebrow">The Thinking Architect</span>
-            <h1>The Thinking Architect</h1>
-            <p>A community for people in architecture at every stage.</p>
-            <p className="hero-support">
-              Built around one idea: nobody should have to figure this profession out alone.
-            </p>
-            <a className="button" href="#join">Join the community</a>
+          <div className="shell hero-layout">
+            <div className="hero-content">
+              <span className="hero-kicker">For the people shaping what comes next</span>
+              <h1>The Thinking Architect</h1>
+              <p>A community for people in architecture at every stage.</p>
+              <p className="hero-support">Built around one idea: nobody should have to figure this profession out alone.</p>
+              <a className="button" href="#join">Join the community <span aria-hidden="true">↗</span></a>
+            </div>
+            <div className="hero-art" aria-hidden="true">
+              <div className="art-topline"><span>FIELD NOTES · 01</span><span>06° 31′ N</span></div>
+              <svg className="plan-drawing" viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 42H372V338H48z" />
+                <path d="M48 42h130v116H48zM178 42h102v72H178zM280 42h92v116h-92zM48 158h130v92H48zM178 114h102v136H178zM280 158h92v92h-92zM48 250h82v88H48zM130 250h150v88H130zM280 250h92v88h-92z" />
+                <path d="M178 158v-24m0 24h24m78-44h-22m22 44v-22M130 250v-22m150 22h-22M48 205h18m-18 90h28" />
+                <circle cx="229" cy="182" r="5" />
+                <path d="M229 168v-22m0 72v-22m14-14h22m-72 0h22" />
+                <path className="plan-dash" d="M24 190h372M210 18v344" />
+              </svg>
+              <div className="art-caption"><span className="caption-dot" /> A clearer path through practice</div>
+            </div>
           </div>
         </section>
 
@@ -110,45 +122,46 @@ export default function Home() {
         </section>
 
         <section className="section audience-section" id="who">
-          <div className="shell narrow">
-            <span className="eyebrow">There is room for you here</span>
-            <h2>Who it is for</h2>
-            <ul className="audience-list">
-              <li>Architecture students, wondering what comes after school</li>
-              <li>Graduates and early-career architects, working out the route to registration</li>
-              <li>Registered architects, who remember how hard it was to find answers and want to pass them on</li>
-            </ul>
-            <p className="audience-close">If you are in architecture at any stage, you belong here.</p>
-          </div>
-        </section>
-
-        <section className="section" id="how-it-works">
-          <div className="shell narrow">
-            <span className="eyebrow">A simple first step</span>
-            <h2>How it works</h2>
-            <ol className="steps-list">
-              <li><strong>Join.</strong> Fill in the short form below.</li>
-              <li><strong>Get the welcome resources.</strong> We send them to your email.</li>
-              <li><strong>Take part.</strong> Come to sessions, ask your questions, and read what others have asked.</li>
-            </ol>
+          <div className="shell overview-grid">
+            <div>
+              <span className="eyebrow">There is room for you here</span>
+              <h2>Who it is for</h2>
+              <ul className="audience-list">
+                <li>Architecture students, wondering what comes after school</li>
+                <li>Graduates and early-career architects, working out the route to registration</li>
+                <li>Registered architects, who remember how hard it was to find answers and want to pass them on</li>
+              </ul>
+              <p className="audience-close">If you are in architecture at any stage, you belong here.</p>
+            </div>
+            <div className="how-card">
+              <span className="eyebrow">A simple first step</span>
+              <h2>How it works</h2>
+              <ol className="steps-list">
+                <li><strong>Join.</strong> Fill in the short form below.</li>
+                <li><strong>Get the welcome resources.</strong> We send them to your email.</li>
+                <li><strong>Take part.</strong> Come to sessions, ask your questions, and read what others have asked.</li>
+              </ol>
+            </div>
           </div>
         </section>
 
         <section className="section join-section" id="join">
           <div className="shell narrow">
-            <span className="eyebrow">Come join us</span>
-            <h2>Join the community</h2>
-            <p className="section-copy">Fill in the short form to get started.</p>
-            <iframe
-              className="form-frame"
-              data-tally-src="https://tally.so/embed/9q8l55?alignLeft=1&hideTitle=1&transparentBackground=1"
-              title="Join The Thinking Architect community"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            />
-            <p className="form-note">
-              By submitting, you agree that TTA may email you about sessions and resources. You can unsubscribe at any time.
-            </p>
+            <div className="join-copy">
+              <span className="eyebrow">Come join us</span>
+              <h2>Join the community</h2>
+              <p className="section-copy">A few details, then you’re in. Get the welcome resources and an invite to the conversation.</p>
+              <button className="button join-button" type="button" data-tally-open="9q8l55" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">
+                Open the signup form <span aria-hidden="true">↗</span>
+              </button>
+              <p className="form-note">We’ll only use your details for community resources and updates.</p>
+            </div>
+            <div className="join-aside" aria-hidden="true">
+              <span className="aside-mark">TTA</span>
+              <p>Make room for the questions you didn’t know to ask.</p>
+              <span className="aside-line" />
+              <span className="aside-note">STUDENT · GRADUATE · PRACTITIONER</span>
+            </div>
           </div>
         </section>
 
@@ -170,7 +183,7 @@ export default function Home() {
         <section className="closing-cta">
           <div className="shell narrow">
             <h2>Nobody should have to figure this out alone.</h2>
-            <a className="button" href="#join">Join the community</a>
+            <button className="button" type="button" data-tally-open="9q8l55" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Join the community <span aria-hidden="true">↗</span></button>
           </div>
         </section>
       </main>
